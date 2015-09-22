@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kousoku/api/client/version'
+require 'kousoku_api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'kousoku-api-client'
-  spec.version       = KousokuApiClient::VERSION
+  spec.version       = KousokuApi::VERSION
   spec.authors       = ['joe-re']
   spec.email         = ['joe.tialtngo@gmail.com']
 
@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.10'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'faraday', '~> 0.9'
+  spec.add_development_dependency 'activesupport', '>= 4', '< 5'
 end
