@@ -1,0 +1,3 @@
+module KousokuApiClient
+  # Your code goes here...
+end
